@@ -1,0 +1,60 @@
+
+.header__container{ 
+    padding-top: 40px;
+}
+
+.header__upper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo{ 
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header__logo-image{
+
+}
+
+.header__shop-name{
+
+}
+
+.header__contacts{
+    display: flex;
+}
+
+.contacts{
+
+}
+
+.contacts__social-media{
+    display: flex;
+}
+
+.contacts__text{
+
+}
+
+.contacts__icons{
+    display: flex;
+}
+
+.contacts__icon{
+
+}
+
+.contacts__number-schedule{
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts__number{
+
+}
+
+.contacts__schedule{
+
+}
