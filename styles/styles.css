@@ -31,6 +31,7 @@ html, body{
     color: #252B42;
     font-family: 'Gilroy-Medium';
     font-weight: 500;
+    scroll-behavior: smooth; 
    
 }
 

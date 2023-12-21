@@ -57,7 +57,9 @@
 .item-shop__content{
     /* padding: 30px; */
     flex: 1 1 auto;
-    
+    display: flex;
+    flex-direction: column;
+
    
 }
 
@@ -93,12 +95,17 @@
     font-family: 'Gilroy-Semibold';
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 .item-shop__button{
     max-width: 60%;
-    margin:  25px auto 0;
+    width: 100%;
+    margin:  25px auto auto;
     padding: 30px 0;
+    margin: auto auto 0;
+    
+    
 }
 
 .item-shop__button {
@@ -165,6 +172,7 @@
     }
     .item-shop__price{
         margin-top: 10px !important;
+        margin-bottom: 0;
     }
     .item-shop{
        
@@ -180,6 +188,7 @@
     .item-shop__button {
         letter-spacing: 0.25em;
     }
+    
     
 }
 

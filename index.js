@@ -120,3 +120,10 @@ document.querySelector('#callModal .button').addEventListener('click', function(
 
 // Quantity changer
 
+const choseSweaterButton = document.querySelector('.header .button')
+
+
+choseSweaterButton.addEventListener('click', function() {
+    // Используем метод scrollIntoView для плавного скролла до блока
+    document.getElementById('shop').scrollIntoView({ behavior: 'smooth' });
+  });
