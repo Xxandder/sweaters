@@ -1,0 +1,165 @@
+.contacts-block{
+    padding: 70px 0 175px 0;
+    position: relative;
+}
+
+.contacts-block__container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    z-index: 1;
+    /* padding: 0; */
+   
+}
+
+.contacts-block__info{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacts-block__text{
+    font-size: 20px;
+    font-family: 'Gilroy-Regular';
+}
+
+.contacts-block__text span{
+    font-family: 'Gilroy-Semibold';
+}
+
+.contacts-block__phone, .contacts-block__schedule{
+    display: flex;
+    gap: 10px;
+}
+
+.contacts-block__button{
+    display: flex;
+    align-items: center;
+    padding: 25px 30px;
+    max-width: 302px;
+    gap: 20px;
+}
+
+
+.contacts-block__social-media{
+    display: flex;
+    gap: 28px;
+    margin-top: 20px;
+}
+
+.contacts-block__wrapper{
+    margin-left: auto;
+    
+    /* width: 100%; */
+}
+
+.contacts__title{
+    text-align: left;
+}
+
+.contacts-block__image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+   
+}
+
+
+.contacts-block__phone-image{
+    position: absolute;
+    width: 510px;
+    height: 510px;
+    top: -70px;
+    left: 0;
+    
+    z-index: 1
+}
+
+.contacts-block__phone-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.contacts-block__button-text{
+ 
+    text-align: left;
+    white-space: nowrap;
+    
+}
+
+@media(max-width: 1046px){
+    .contacts-block__social-media{
+        flex-direction: column;
+        
+    }
+    .contacts-block__wrapper{
+        margin: 0 50px 0 0;
+    }
+
+    .contacts-block__phone-image{
+        
+       
+        top: 0px;
+       
+    }
+}
+
+@media(max-width: 836px){
+    .contacts-block__wrapper{
+        margin: 0;
+    }
+}
+
+@media(max-width: 768px){
+    .contacts-block__wrapper{
+        margin: 0;
+        align-self: center;
+    }
+    .contacts-block__text{
+        font-size: 16px;
+    }
+    .contacts-block__button-text{
+        font-size: 9px;
+        text-align: left;
+    }
+    .contacts-block__button{
+        padding: 14px 17px;
+        border-radius: 5.63px;
+    }
+    .contacts-block__social-media{
+        flex-direction: row;
+        
+    }
+    .contacts-block{
+        padding: 30px 0 316px 0;
+        position: relative;
+    }
+    .contacts-block__phone-image{
+        
+        width: 320px;
+        height: 320px;
+        top: 250px;
+        left: 50%;
+transform: translateX(calc(-50% + 30px));
+    }
+}
+
+
+
+@media(max-width: 472px){
+    .contacts-block__social-media{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .contacts-block__phone-image{
+        
+       
+        top: 300px;
+      
+    }
+}

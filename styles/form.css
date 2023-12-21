@@ -1,0 +1,146 @@
+.recall-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 65px; 
+    border: 1px solid #435CC0;
+    border-radius: 15px;
+    max-width: 432px;
+    max-height: 522px;
+    margin:  0 auto;
+}
+
+.recall-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.recall-form__title{
+    font-size: 25px;
+}
+
+
+.recall-form__title .title__secondary{
+    font-size: 16px;
+    line-height: 1.16;
+}
+
+.form-input{
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 27px 30px;
+    
+    border: 1px solid #435CC0;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.form-input:hover {
+    background: linear-gradient(180deg, #FFFFFF 0%, #E9EDFF 100%);
+    border-color: #435CC0;;
+}
+
+.form-input:focus {
+    border-color: #435CC0 !important;
+}
+
+.form-input:active {
+    border-color: #435CC0 !important;
+}
+
+
+.form-input:not(:first-child){
+    margin-top: 10px;
+}
+
+.form-input::placeholder{
+    color: #5873E4 
+}
+
+.recall-form__input-fields{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.recall-form__privacy{
+    font-size: 11px;
+    line-height: 1.16;
+    font-family: 'Gilroy-Regular';
+    margin-top: 10px;
+    text-align: center;
+}
+
+.recall-form__privacy span{
+    text-decoration:underline;
+}
+
+.recall-form__messangers{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-top: 31px;
+}
+
+.recall-form__messangers-text{
+    text-align: end;
+    font-size: 11px;
+    line-height: 1.16;
+    font-family: 'Gilroy-Regular';
+    max-width: 121px;
+}
+
+.recall-form__messangers-icons{
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.recall-form__messangers-icon{
+
+}
+
+
+.recall__button{
+    margin-top: 30px;
+    font-size: 16px;
+    padding: 28px;
+}
+
+@media(max-width: 1124px) and (min-width: 1046px){
+    .recall-form{
+        padding: 20px 35px;
+        max-height: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    .recall-form{
+        padding: 30px 28px;
+    }
+    .recall-form__title .title__main{
+        font-size: 20px;
+    }
+    .recall-form__title .title__secondary{
+        font-size: 12px;
+    }
+    .form-input{
+        font-size: 12px;
+    }
+    .form-input{
+        font-size: 15px;
+        padding: 22px 24px;
+    }.recall-form__input-fields{
+        margin-top: 20px;
+    }
+    .recall__button{
+        margin-top: 20px;
+        font-size: 12px;
+    }
+    .recall-form__messangers{
+       
+        margin-top: 20px;
+    }
+}

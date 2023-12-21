@@ -1,0 +1,147 @@
+.slider{
+    padding: 70px 0 ;
+}
+
+.slider__container{
+    position: relative;
+}
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 843px; /* Ширина слайда */
+    margin: 50px auto;
+  }
+  
+  .slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    /* gap: 15px; */
+    overflow: visible;
+  }
+  
+  .slide {
+    flex: 0 0 281px; /* Ширина слайда */
+    /* box-shadow: 0px 0px 50px 0px #00000014; */
+
+  }
+  
+  .slide-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .prev-button, .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(calc(-50% + 50px));
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    /* padding: 10px; */
+    cursor: pointer;
+        background: 
+    linear-gradient(225deg, #FF333D 0%, #FE5159 50.81%, #FF303A 100%);
+    box-shadow: 0px 0px 3.5px 0px #FFFFFF8C inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+  }
+  
+  .prev-button {
+    left: 100px;
+    /* padding: 17px 25px 16px 21px; */
+  }
+  
+  .next-button {
+    right: 100px;
+    /* padding: 17px 25px 16px 21px; */
+  }
+
+  .next-button img{
+    transform: scaleX(-1);
+  }
+
+  @media(max-width: 1146px){
+    .prev-button {
+        left: 50px;
+      }
+      .next-button {
+        right: 75px;
+      }
+      .slide-image {
+        width: 90%;
+        height: auto;
+      }
+  }
+
+  @media(max-width: 1046px){
+    .slide-image {
+        width: 150%;
+        height: auto;
+      }
+    
+      .slider-container {
+       
+        width: 421px; /* Ширина слайда */
+      
+      }
+      .slider-wrapper{
+        gap: 168px;
+      }
+      
+  }
+
+@media(max-width: 768px){
+    .slider{
+        padding: 30px 0;
+    }
+    .slide-image {
+        width: 100%;
+        height: auto;
+      }
+      .slider-container {
+       
+        width: 283px; /* Ширина слайда */
+      
+      }
+      .prev-button, .next-button {
+        width: 50px;
+        height: 50px;
+      }
+      .next-button {
+        right: 50px;
+      }
+      .slider-container {
+        margin: -10px auto;
+      }
+      .slider{
+        padding: 30px 0 ;
+    }
+    .slider-container {
+        width: 281px
+    }
+    .slider-wrapper{
+        gap: 0;
+      }
+      .prev-button, .next-button {
+
+        transform: translateY(calc(-50%));
+    }
+      
+}
+
+@media(max-width: 430px){
+    .prev-button {
+        left: 15px;
+        /* padding: 17px 25px 16px 21px; */
+      }
+      
+      .next-button {
+        right: 15px;
+        /* padding: 17px 25px 16px 21px; */
+      }
+}

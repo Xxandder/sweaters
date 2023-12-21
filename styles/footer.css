@@ -1,0 +1,45 @@
+.footer{
+    padding: 29px 0;
+    position: relative;
+    z-index: 100;
+    background-color: white;
+}
+
+.footer__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.footer__shop-name, .footer__designer{
+    font-family: 'Gilroy-Semibold';
+    
+}
+
+.footer__shop-name a, .footer__designer a{
+    text-decoration: underline;
+    font-family: 'Gilroy-Regular';
+}
+
+.footer__designer{
+text-align: end;
+}
+
+@media(max-width: 768px){
+    .footer__container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__logo{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+    
+.footer__designer{
+    text-align: center;
+    margin-top: 30px;
+    }
+}
